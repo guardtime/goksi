@@ -1,0 +1,36 @@
+{
+    "Aggregator": {
+        "Host": "some.ksigw.com",
+        "Port": "1234",
+        "User": "usr",
+        "Pass": "key",
+        "Hmac": "SHA2-256"
+    },
+    "Extender": {
+        "Host": "some.ksigw.com",
+        "Port": "5678",
+        "User": "usr",
+        "Pass": "key",
+        "Hmac": "SHA2-256"
+    },
+    "Pubfile": {
+        "Url": "http://verify.guardtime.com/ksi-publications.bin",
+        "Cnstr": "1.2.840.113549.1.9.1=publications@guardtime.com"
+    },
+    "Schema": {
+        "Tcp": "ksi+tcp",
+        "Http": "ksi+http"
+    },
+    "HighAvailability": {
+        "Aggregator": [
+            { "Host": "some.ksigw0.com", "Port": "1234", "User": "usr", "Pass": "key", "Hmac": "SHA2-256" },
+            { "Host": "some.ksigw1.com", "Port": "1234", "User": "usr", "Pass": "key", "Hmac": "SHA2-256" },
+            { "Host": "some.ksigw2.com", "Port": "1234", "User": "usr", "Pass": "key", "Hmac": "SHA2-256" }
+        ],
+        "Extender": [
+            { "Host": "some.ksigw0.com", "Port": "5678", "User": "usr", "Pass": "key", "Hmac": "SHA2-256" },
+            { "Host": "some.ksigw1.com", "Port": "5678", "User": "usr", "Pass": "key", "Hmac": "SHA2-256" },
+            { "Host": "some.ksigw2.com", "Port": "5678", "User": "usr", "Pass": "key", "Hmac": "SHA2-256" }
+        ]
+    }
+}

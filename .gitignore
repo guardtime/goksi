@@ -1,0 +1,5 @@
+test/out
+errors/debug.test
+debug.test
+test/systest.conf.json
+.idea
